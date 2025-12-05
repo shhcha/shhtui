@@ -1,4 +1,0 @@
-/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles/shhtui.dir
-/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles/example.dir
-/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles/edit_cache.dir
-/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles/rebuild_cache.dir
