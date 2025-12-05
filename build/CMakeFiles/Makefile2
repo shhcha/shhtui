@@ -88,12 +88,12 @@ clean: CMakeFiles/example.dir/clean
 CMakeFiles/shhtui.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=3,4,5 "Built target shhtui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target shhtui"
 .PHONY : CMakeFiles/shhtui.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shhtui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aidan/desk/personal/projects/shhtui/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aidan/desk/personal/projects/shhtui/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shhtui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aidan/desk/personal/projects/shhtui/build/CMakeFiles 0
 .PHONY : CMakeFiles/shhtui.dir/rule
@@ -105,7 +105,7 @@ shhtui: CMakeFiles/shhtui.dir/rule
 # codegen rule for target.
 CMakeFiles/shhtui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=3,4,5 "Finished codegen for target shhtui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target shhtui"
 .PHONY : CMakeFiles/shhtui.dir/codegen
 
 # clean rule for target.
@@ -125,7 +125,7 @@ CMakeFiles/example.dir/all: CMakeFiles/shhtui.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aidan/desk/personal/projects/shhtui/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aidan/desk/personal/projects/shhtui/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aidan/desk/personal/projects/shhtui/build/CMakeFiles 0
 .PHONY : CMakeFiles/example.dir/rule

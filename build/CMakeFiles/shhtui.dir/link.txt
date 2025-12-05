@@ -1,2 +1,2 @@
-/usr/sbin/ar qc libshhtui.a CMakeFiles/shhtui.dir/src/util.cpp.o CMakeFiles/shhtui.dir/src/renderer.cpp.o
+/usr/sbin/ar qc libshhtui.a CMakeFiles/shhtui.dir/src/shhtui.cpp.o CMakeFiles/shhtui.dir/src/util.cpp.o CMakeFiles/shhtui.dir/src/renderer.cpp.o CMakeFiles/shhtui.dir/src/app.cpp.o CMakeFiles/shhtui.dir/src/widgets.cpp.o
 /usr/sbin/ranlib libshhtui.a

@@ -1,22 +1,14 @@
-// include/util.hpp
-#pragma once
+// util.hpp
+#ifndef SHHTUI_UTIL_HPP
+#define SHHTUI_UTIL_HPP
 
-#include <termios.h>
+#include <iostream>
 #include <tuple>
 
-namespace shhtui {
+namespace shhtui::util {
+    
+    bool _moveCursor(std::tuple<int,int> position);
 
-    namespace util {
-        bool start();
+}
 
-        bool _enableRaw();
-        bool _disableRaw();
-
-        bool enableCursor();
-        bool disableCursor();
-
-        bool moveCursor(std::tuple<int,int> cursorPos);
-
-    } // namespace util
-
-} // namespace shhtui
+#endif

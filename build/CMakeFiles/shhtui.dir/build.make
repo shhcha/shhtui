@@ -72,10 +72,24 @@ include CMakeFiles/shhtui.dir/flags.make
 CMakeFiles/shhtui.dir/codegen:
 .PHONY : CMakeFiles/shhtui.dir/codegen
 
+CMakeFiles/shhtui.dir/src/shhtui.cpp.o: CMakeFiles/shhtui.dir/flags.make
+CMakeFiles/shhtui.dir/src/shhtui.cpp.o: /home/aidan/desk/personal/projects/shhtui/src/shhtui.cpp
+CMakeFiles/shhtui.dir/src/shhtui.cpp.o: CMakeFiles/shhtui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shhtui.dir/src/shhtui.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shhtui.dir/src/shhtui.cpp.o -MF CMakeFiles/shhtui.dir/src/shhtui.cpp.o.d -o CMakeFiles/shhtui.dir/src/shhtui.cpp.o -c /home/aidan/desk/personal/projects/shhtui/src/shhtui.cpp
+
+CMakeFiles/shhtui.dir/src/shhtui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shhtui.dir/src/shhtui.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aidan/desk/personal/projects/shhtui/src/shhtui.cpp > CMakeFiles/shhtui.dir/src/shhtui.cpp.i
+
+CMakeFiles/shhtui.dir/src/shhtui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shhtui.dir/src/shhtui.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aidan/desk/personal/projects/shhtui/src/shhtui.cpp -o CMakeFiles/shhtui.dir/src/shhtui.cpp.s
+
 CMakeFiles/shhtui.dir/src/util.cpp.o: CMakeFiles/shhtui.dir/flags.make
 CMakeFiles/shhtui.dir/src/util.cpp.o: /home/aidan/desk/personal/projects/shhtui/src/util.cpp
 CMakeFiles/shhtui.dir/src/util.cpp.o: CMakeFiles/shhtui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shhtui.dir/src/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shhtui.dir/src/util.cpp.o"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shhtui.dir/src/util.cpp.o -MF CMakeFiles/shhtui.dir/src/util.cpp.o.d -o CMakeFiles/shhtui.dir/src/util.cpp.o -c /home/aidan/desk/personal/projects/shhtui/src/util.cpp
 
 CMakeFiles/shhtui.dir/src/util.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/shhtui.dir/src/util.cpp.s: cmake_force
 CMakeFiles/shhtui.dir/src/renderer.cpp.o: CMakeFiles/shhtui.dir/flags.make
 CMakeFiles/shhtui.dir/src/renderer.cpp.o: /home/aidan/desk/personal/projects/shhtui/src/renderer.cpp
 CMakeFiles/shhtui.dir/src/renderer.cpp.o: CMakeFiles/shhtui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shhtui.dir/src/renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shhtui.dir/src/renderer.cpp.o"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shhtui.dir/src/renderer.cpp.o -MF CMakeFiles/shhtui.dir/src/renderer.cpp.o.d -o CMakeFiles/shhtui.dir/src/renderer.cpp.o -c /home/aidan/desk/personal/projects/shhtui/src/renderer.cpp
 
 CMakeFiles/shhtui.dir/src/renderer.cpp.i: cmake_force
@@ -100,19 +114,53 @@ CMakeFiles/shhtui.dir/src/renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shhtui.dir/src/renderer.cpp.s"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aidan/desk/personal/projects/shhtui/src/renderer.cpp -o CMakeFiles/shhtui.dir/src/renderer.cpp.s
 
+CMakeFiles/shhtui.dir/src/app.cpp.o: CMakeFiles/shhtui.dir/flags.make
+CMakeFiles/shhtui.dir/src/app.cpp.o: /home/aidan/desk/personal/projects/shhtui/src/app.cpp
+CMakeFiles/shhtui.dir/src/app.cpp.o: CMakeFiles/shhtui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shhtui.dir/src/app.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shhtui.dir/src/app.cpp.o -MF CMakeFiles/shhtui.dir/src/app.cpp.o.d -o CMakeFiles/shhtui.dir/src/app.cpp.o -c /home/aidan/desk/personal/projects/shhtui/src/app.cpp
+
+CMakeFiles/shhtui.dir/src/app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shhtui.dir/src/app.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aidan/desk/personal/projects/shhtui/src/app.cpp > CMakeFiles/shhtui.dir/src/app.cpp.i
+
+CMakeFiles/shhtui.dir/src/app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shhtui.dir/src/app.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aidan/desk/personal/projects/shhtui/src/app.cpp -o CMakeFiles/shhtui.dir/src/app.cpp.s
+
+CMakeFiles/shhtui.dir/src/widgets.cpp.o: CMakeFiles/shhtui.dir/flags.make
+CMakeFiles/shhtui.dir/src/widgets.cpp.o: /home/aidan/desk/personal/projects/shhtui/src/widgets.cpp
+CMakeFiles/shhtui.dir/src/widgets.cpp.o: CMakeFiles/shhtui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/shhtui.dir/src/widgets.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shhtui.dir/src/widgets.cpp.o -MF CMakeFiles/shhtui.dir/src/widgets.cpp.o.d -o CMakeFiles/shhtui.dir/src/widgets.cpp.o -c /home/aidan/desk/personal/projects/shhtui/src/widgets.cpp
+
+CMakeFiles/shhtui.dir/src/widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shhtui.dir/src/widgets.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aidan/desk/personal/projects/shhtui/src/widgets.cpp > CMakeFiles/shhtui.dir/src/widgets.cpp.i
+
+CMakeFiles/shhtui.dir/src/widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shhtui.dir/src/widgets.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aidan/desk/personal/projects/shhtui/src/widgets.cpp -o CMakeFiles/shhtui.dir/src/widgets.cpp.s
+
 # Object files for target shhtui
 shhtui_OBJECTS = \
+"CMakeFiles/shhtui.dir/src/shhtui.cpp.o" \
 "CMakeFiles/shhtui.dir/src/util.cpp.o" \
-"CMakeFiles/shhtui.dir/src/renderer.cpp.o"
+"CMakeFiles/shhtui.dir/src/renderer.cpp.o" \
+"CMakeFiles/shhtui.dir/src/app.cpp.o" \
+"CMakeFiles/shhtui.dir/src/widgets.cpp.o"
 
 # External object files for target shhtui
 shhtui_EXTERNAL_OBJECTS =
 
+libshhtui.a: CMakeFiles/shhtui.dir/src/shhtui.cpp.o
 libshhtui.a: CMakeFiles/shhtui.dir/src/util.cpp.o
 libshhtui.a: CMakeFiles/shhtui.dir/src/renderer.cpp.o
+libshhtui.a: CMakeFiles/shhtui.dir/src/app.cpp.o
+libshhtui.a: CMakeFiles/shhtui.dir/src/widgets.cpp.o
 libshhtui.a: CMakeFiles/shhtui.dir/build.make
 libshhtui.a: CMakeFiles/shhtui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libshhtui.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aidan/desk/personal/projects/shhtui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libshhtui.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/shhtui.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shhtui.dir/link.txt --verbose=$(VERBOSE)
 

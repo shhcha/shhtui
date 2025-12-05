@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/aidan/desk/personal/projects/shhtui/src/app.cpp" "CMakeFiles/shhtui.dir/src/app.cpp.o" "gcc" "CMakeFiles/shhtui.dir/src/app.cpp.o.d"
   "/home/aidan/desk/personal/projects/shhtui/src/renderer.cpp" "CMakeFiles/shhtui.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/shhtui.dir/src/renderer.cpp.o.d"
+  "/home/aidan/desk/personal/projects/shhtui/src/shhtui.cpp" "CMakeFiles/shhtui.dir/src/shhtui.cpp.o" "gcc" "CMakeFiles/shhtui.dir/src/shhtui.cpp.o.d"
   "/home/aidan/desk/personal/projects/shhtui/src/util.cpp" "CMakeFiles/shhtui.dir/src/util.cpp.o" "gcc" "CMakeFiles/shhtui.dir/src/util.cpp.o.d"
+  "/home/aidan/desk/personal/projects/shhtui/src/widgets.cpp" "CMakeFiles/shhtui.dir/src/widgets.cpp.o" "gcc" "CMakeFiles/shhtui.dir/src/widgets.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

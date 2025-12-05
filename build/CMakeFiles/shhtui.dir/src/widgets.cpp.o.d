@@ -1,9 +1,7 @@
-CMakeFiles/example.dir/example/example.cpp.o: \
- /home/aidan/desk/personal/projects/shhtui/example/example.cpp \
+CMakeFiles/shhtui.dir/src/widgets.cpp.o: \
+ /home/aidan/desk/personal/projects/shhtui/src/widgets.cpp \
  /usr/include/stdc-predef.h \
- /home/aidan/desk/personal/projects/shhtui/example/../include/shhtui.hpp \
- /home/aidan/desk/personal/projects/shhtui/example/../include/app.hpp \
- /home/aidan/desk/personal/projects/shhtui/example/../include/widgets.hpp \
+ /home/aidan/desk/personal/projects/shhtui/src/../include/widgets.hpp \
  /usr/include/c++/15.2.1/tuple /usr/include/c++/15.2.1/bits/stl_pair.h \
  /usr/include/c++/15.2.1/type_traits \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -126,8 +124,8 @@ CMakeFiles/example.dir/example/example.cpp.o: \
  /usr/include/c++/15.2.1/bits/stl_vector.h \
  /usr/include/c++/15.2.1/bits/stl_bvector.h \
  /usr/include/c++/15.2.1/bits/vector.tcc /usr/include/c++/15.2.1/array \
- /home/aidan/desk/personal/projects/shhtui/example/../include/renderer.hpp \
- /home/aidan/desk/personal/projects/shhtui/example/../include/util.hpp \
+ /home/aidan/desk/personal/projects/shhtui/src/../include/renderer.hpp \
+ /home/aidan/desk/personal/projects/shhtui/src/../include/util.hpp \
  /usr/include/c++/15.2.1/iostream /usr/include/c++/15.2.1/ostream \
  /usr/include/c++/15.2.1/bits/ostream.h /usr/include/c++/15.2.1/ios \
  /usr/include/c++/15.2.1/exception \
@@ -169,16 +167,4 @@ CMakeFiles/example.dir/example/example.cpp.o: \
  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
- /usr/include/c++/15.2.1/bits/istream.tcc /usr/include/termios.h \
- /usr/include/bits/termios.h /usr/include/bits/termios-struct.h \
- /usr/include/bits/termios-c_cc.h /usr/include/bits/termios-c_iflag.h \
- /usr/include/bits/termios-c_oflag.h /usr/include/bits/termios-c_cflag.h \
- /usr/include/bits/termios-cbaud.h /usr/include/bits/termios-c_lflag.h \
- /usr/include/bits/termios-tcflow.h /usr/include/bits/termios-misc.h \
- /usr/include/bits/termios-baud.h /usr/include/sys/ttydefaults.h \
- /usr/include/c++/15.2.1/iterator \
- /usr/include/c++/15.2.1/bits/stream_iterator.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h
+ /usr/include/c++/15.2.1/bits/istream.tcc

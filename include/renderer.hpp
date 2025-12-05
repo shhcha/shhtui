@@ -1,20 +1,29 @@
-// include/renderer.hpp
-#pragma once
+// renderer.hpp
+#ifndef SHHTUI_RENDERER_HPP
+#define SHHTUI_RENDERER_HPP
 
-#include <tuple>
+#include "util.hpp"
+
+#include <iostream>
 #include <string>
 
-namespace shhtui {
+namespace shhtui::renderer {
+    
+    extern std::string _TextPrefix;
+    extern std::string _TextSuffix;
 
-    namespace renderer {
-        
-        bool start();
+    bool startup();
+    bool shutdown();
 
-        // Basics
-        bool clearConsole();
+    bool clearScreen();
+    bool refreshScreen();
 
-        bool _drawRawText(std::tuple<int, int> position, std::string message);
+    bool _drawRawText(std::string msg, std::tuple<int,int> position);
+    bool _drawBox(std::tuple<int,int> position, std::tuple<int,int> size, std::string color = std::string(""));
 
-    }
+    std::string _formatText(std::string text, std::string prefix = _TextPrefix, std::string suffix = _TextSuffix);
 
-} // namespace shhtui
+
+}
+
+#endif

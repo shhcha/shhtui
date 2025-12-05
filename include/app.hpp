@@ -1,18 +1,44 @@
-// include/app.hpp
-#pragma once
+// app.hpp
+#ifndef SHHTUI_APP_HPP
+#define SHHTUI_APP_HPP
 
-namespace shhtui {
+#include "widgets.hpp"
 
-    namespace app {
+
+namespace shhtui::app {
+
+    class C_View {
+    public:
+        C_View(std::string id);
         
-        int _CurrentAppWindowID = 0;
+        bool addWidget(widgets::Widget* w);
+        bool update();
+        bool handleInput(int key);
+        bool draw();
+
+        std::string _name;
+        std::vector<shhtui::widgets::Widget*> _widgets;
+        int _focused = 0;
+
+    };
+
+    class C_Application {
+    public:
+        C_Application();
+
+        bool setActiveView(C_View* v);
+        bool requestExit();
+        bool isRunning() const;
+        bool update();
         
-        class C_WindowElement;
+        bool pollInput();
+        bool run();
+        bool draw();
 
-        class C_AppWindow;
+        bool _running;
+        C_View* _activeView;
+    };
 
-        
+}
 
-    }
-
-} // namespace shhtui
+#endif

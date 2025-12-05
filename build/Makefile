@@ -166,6 +166,30 @@ example/example.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/example/example.cpp.s
 .PHONY : example/example.cpp.s
 
+src/app.o: src/app.cpp.o
+.PHONY : src/app.o
+
+# target to build an object file
+src/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
+
+src/app.i: src/app.cpp.i
+.PHONY : src/app.i
+
+# target to preprocess a source file
+src/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
+
+src/app.s: src/app.cpp.s
+.PHONY : src/app.s
+
+# target to generate assembly for a file
+src/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
+
 src/renderer.o: src/renderer.cpp.o
 .PHONY : src/renderer.o
 
@@ -189,6 +213,30 @@ src/renderer.s: src/renderer.cpp.s
 src/renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/renderer.cpp.s
 .PHONY : src/renderer.cpp.s
+
+src/shhtui.o: src/shhtui.cpp.o
+.PHONY : src/shhtui.o
+
+# target to build an object file
+src/shhtui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/shhtui.cpp.o
+.PHONY : src/shhtui.cpp.o
+
+src/shhtui.i: src/shhtui.cpp.i
+.PHONY : src/shhtui.i
+
+# target to preprocess a source file
+src/shhtui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/shhtui.cpp.i
+.PHONY : src/shhtui.cpp.i
+
+src/shhtui.s: src/shhtui.cpp.s
+.PHONY : src/shhtui.s
+
+# target to generate assembly for a file
+src/shhtui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/shhtui.cpp.s
+.PHONY : src/shhtui.cpp.s
 
 src/util.o: src/util.cpp.o
 .PHONY : src/util.o
@@ -214,6 +262,30 @@ src/util.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/util.cpp.s
 .PHONY : src/util.cpp.s
 
+src/widgets.o: src/widgets.cpp.o
+.PHONY : src/widgets.o
+
+# target to build an object file
+src/widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/widgets.cpp.o
+.PHONY : src/widgets.cpp.o
+
+src/widgets.i: src/widgets.cpp.i
+.PHONY : src/widgets.i
+
+# target to preprocess a source file
+src/widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/widgets.cpp.i
+.PHONY : src/widgets.cpp.i
+
+src/widgets.s: src/widgets.cpp.s
+.PHONY : src/widgets.s
+
+# target to generate assembly for a file
+src/widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shhtui.dir/build.make CMakeFiles/shhtui.dir/src/widgets.cpp.s
+.PHONY : src/widgets.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -227,12 +299,21 @@ help:
 	@echo "... example/example.o"
 	@echo "... example/example.i"
 	@echo "... example/example.s"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
 	@echo "... src/renderer.o"
 	@echo "... src/renderer.i"
 	@echo "... src/renderer.s"
+	@echo "... src/shhtui.o"
+	@echo "... src/shhtui.i"
+	@echo "... src/shhtui.s"
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"
+	@echo "... src/widgets.o"
+	@echo "... src/widgets.i"
+	@echo "... src/widgets.s"
 .PHONY : help
 
 

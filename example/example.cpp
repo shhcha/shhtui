@@ -1,29 +1,28 @@
 #include "../include/shhtui.hpp"
-#include <charconv>
-#include <iostream>
-#include <string_view>
+#include <iterator>
 #include <unistd.h>
-#include <format>
 
 int main() {
-    shhtui::util::start();
-    shhtui::renderer::start();
-    std::cout << std::string("Raw mode enabled. Press 'q' to quit.\n");
-    char c;
-    while (read(STDIN_FILENO, &c, 1) == 1) {
-        if (c == 'q') break;
+    shhtui::core::startup();
 
-        // for (int i=2;i<=3;i++)
-        //         shhtui::renderer::_drawRawText(std::tuple<int,int>{i,4}, std::format("You pressed {}", c));
+    shhtui::app::C_Application app;
+    shhtui::app::C_View mainMenuView("MainMenu");
 
-        for (int i=0; i<=5; i++)
-            for (int j=0;j<=2;j++)
-            {
-                shhtui::renderer::_drawRawText(std::tuple<int,int>{i,j}, std::string("X"));
-            }
+    shhtui::renderer::clearScreen();
 
-        std::cout.flush(); //Print updates to Console
-    }
+    mainMenuView.addWidget(new shhtui::widgets::Label(
+            {1,1},
+            std::string("Press 'q' to quit! - Hello from SHHCHA!")));
 
-    return 0;
+
+    mainMenuView.addWidget(new shhtui::widgets::Button(
+        {4,4},
+        {3,14},
+        std::string("Click Me!")));
+
+    app.setActiveView(&mainMenuView);
+    // app._activeView->_widgets.at(0)->draw();
+    // shhtui::renderer::refreshScreen();
+    app.run();
+    return shhtui::core::shutdown();
 }
