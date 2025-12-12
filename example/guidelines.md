@@ -20,7 +20,7 @@ Welcome! This document outlines the fundamental principles and standards for con
 | :--- | :--- | :--- |
 | **Header File (.hpp)** | camelCase | `window.hpp`, `appManager.hpp` |
 | **Source File (.cpp)** | camelCase | `window.cpp`, `appManager.cpp` |
-| **Structure Names** | PascalCase, prefixed with `C_`, or `S_`, etc. | `class C_Button`, `struct C_InputProcessor` |
+| **Structure Names** | PascalCase, prefixed with `C_`, or `S_`, etc. | `class C_Button`, `struct S_InputProcessor` |
 | **Function/Method Names** | camelCase | `handleInput()`, `getName()` |
 | **Member Variables** | camelCase, prefixed with underscore | `std::string _name`, `int _totalCount` |
 | **Constants/Enums** | SCREAMING_SNAKE_CASE | `COLOR_RED`, `KEY_ARROW_UP` |
