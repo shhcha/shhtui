@@ -1,29 +1,40 @@
-// renderer.hpp
-#ifndef SHHTUI_RENDERER_HPP
-#define SHHTUI_RENDERER_HPP
+#pragma once
 
-#include "util.hpp"
-
-#include <iostream>
+#include "utilities.hpp"
+#include <stack>
 #include <string>
 
-namespace shhtui::renderer {
-    
-    extern std::string _TextPrefix;
-    extern std::string _TextSuffix;
+/**
+ * @brief renderer.hpp declares ALL rendering functionality
+ * 
+ */
 
-    bool startup();
-    bool shutdown();
+namespace shhtui::datatypes 
+{
+    struct S_TextStyle;
+    struct S_Point;
+}
+namespace shhtui::utilities
+{
+    bool moveCursor(datatypes::S_Point toPosition);
+}
+
+namespace shhtui {
+namespace render {
+
+    /// Funtional Methods
 
     bool clearScreen();
     bool refreshScreen();
 
-    bool _drawRawText(std::string msg, std::tuple<int,int> position);
-    bool _drawBox(std::tuple<int,int> position, std::tuple<int,int> size, std::string color = std::string(""));
+    bool pushStyle(datatypes::S_TextStyle &newStyle);
+    bool popStyle();
 
-    std::string _formatText(std::string text, std::string prefix = _TextPrefix, std::string suffix = _TextSuffix);
+    /// Rendering Methods
 
+    bool drawText(datatypes::S_Point originPoint, std::string text);
 
+    extern datatypes::S_TextStyle _currentStyle;
+    extern std::stack<datatypes::S_TextStyle> _styleStack;
 }
-
-#endif
+}

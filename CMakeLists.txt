@@ -6,11 +6,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Library
 add_library(shhtui
-    src/shhtui.cpp
-    src/util.cpp
-    src/renderer.cpp
-    src/app.cpp
-    src/widgets.cpp
+    source/core.cpp
+    source/utilities.cpp
+    source/renderer.cpp
+    source/view.cpp
+    source/widgets.cpp
 )
 
 target_include_directories(shhtui PUBLIC

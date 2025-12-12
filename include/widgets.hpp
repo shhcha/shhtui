@@ -1,53 +1,64 @@
-// widgets.hpp
-#ifndef SHHTUI_WIDGETS_HPP
-#define SHHTUI_WIDGETS_HPP
+#pragma once
 
-#include <tuple>
 #include <string>
-#include <functional>
 
-namespace shhtui::widgets {
+/**
+ * @brief widgets.hpp declares ALL first party widgets, and the `S_WidgetParent` struct
+ * 
+ */
 
-    struct Widget {
-    public:
-        Widget(std::tuple<int,int> position, std::tuple<int,int> size)
-            : _position(position), _size(size) {};
-    
-        virtual ~Widget() {}; 
+#include "utilities.hpp"
 
-        virtual bool draw(bool isFocused = 0) {return -1;};
-        virtual bool handleInput(int key) {return -1;};
-        virtual bool update() {return -1;};
+namespace shhtui {
+namespace widgets {
 
-    protected:
-        std::tuple<int,int> _position;
-        std::tuple<int,int> _size;
+    struct S_WidgetStruct
+    {
+        /// De/Constructor
+        S_WidgetStruct(
+            datatypes::S_Point originPoint,
+            datatypes::S_Dimension maxSize,
+            std::string id
+        ) :
+            _originPoint(originPoint),
+            _maxSize(maxSize),
+            _id(id) {};
+        ~S_WidgetStruct() {};
 
+        /// Methods
+
+        virtual bool draw() { return false;};
+        virtual bool handleInput() { return false;};
+        virtual bool update() { return false;};
+
+        /// Variables
+        datatypes::S_Point _originPoint;
+        datatypes::S_Dimension _maxSize;
+        std::string _id;
     };
 
-    class Label : public Widget {
+    class C_SimpleLabel: public S_WidgetStruct
+    {
     public:
-        Label(std::tuple<int,int> position, std::string text);
-        bool draw(bool isFocused = 0) override;
-        bool handleInput(int key) override;
+        /// De/Constructor
+        C_SimpleLabel(
+            datatypes::S_Point originPoint,
+            datatypes::S_Dimension maxSize,
+            std::string id,
+            std::string message
+        ) :
+            S_WidgetStruct(originPoint,maxSize,id),
+            _text(message) {};
+        ~C_SimpleLabel() = default;
 
-        std::tuple<int,int> _position;
-        std::string _text;
-    };
+        /// Methods
 
-    class Button : public Widget {
-    public:
-        Button(std::tuple<int,int> position, std::tuple<int,int> size, std::string text);
-        bool onClick(std::function<bool()> callback);
-        bool draw(bool isFocused = 0) override;
-        bool handleInput(int key) override;
+        bool draw() override;
 
-        std::tuple<int,int> _position;
-        std::tuple<int,int> _size;
+        /// Variables
         std::string _text;
 
     };
 
 }
-
-#endif
+}

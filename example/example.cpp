@@ -1,28 +1,46 @@
-#include "../include/shhtui.hpp"
-#include <iterator>
+#include "../shhtui.hpp"
+#include <memory>
 #include <unistd.h>
 
-int main() {
-    shhtui::core::startup();
 
-    shhtui::app::C_Application app;
-    shhtui::app::C_View mainMenuView("MainMenu");
+int main()
+{
+    shhtui::utilities::startupTUI();
 
-    shhtui::renderer::clearScreen();
+    auto myStyle = shhtui::datatypes::S_TextStyle{
+        false,
+        true,
+        true,
+        shhtui::datatypes::S_ColorRgb{200,120,180},
+        shhtui::datatypes::S_ColorRgb{40,40,40},
+        0,
+        0
+    };
 
-    mainMenuView.addWidget(new shhtui::widgets::Label(
-            {1,1},
-            std::string("Press 'q' to quit! - Hello from SHHCHA!")));
+    shhtui::render::pushStyle(myStyle);
+
+    auto myApp = std::make_unique<shhtui::core::C_AppCore>();
+
+    auto myView = std::make_shared<shhtui::core::C_View>("mainView");
+
+    auto testWidget = std::make_shared<shhtui::widgets::C_SimpleLabel>
+    (
+        shhtui::datatypes::S_Point{5,5},
+        shhtui::datatypes::S_Dimension{5,5},
+        std::string("ID_01"),
+        std::string("Welcome to shhtui!")
+    );
 
 
-    mainMenuView.addWidget(new shhtui::widgets::Button(
-        {4,4},
-        {3,14},
-        std::string("Click Me!")));
+    myView->addWidget(testWidget);
 
-    app.setActiveView(&mainMenuView);
-    // app._activeView->_widgets.at(0)->draw();
-    // shhtui::renderer::refreshScreen();
-    app.run();
-    return shhtui::core::shutdown();
-}
+    myApp->setView(myView);
+
+    while (myApp->_isRunning)
+    {
+        myApp->run();
+    }
+    
+    sleep(3);
+    return 1;
+};
