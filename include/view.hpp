@@ -22,6 +22,7 @@ namespace core {
         /// Methods
         bool addWidget(std::shared_ptr<widgets::S_WidgetStruct> newWidget);
         bool draw();
+        bool handleInput(const datatypes::S_KeyEvent& ev);
 
         /// Variables
         std::string _id;

@@ -1,5 +1,7 @@
 #include "../shhtui.hpp"
+#include <chrono>
 #include <memory>
+#include <thread>
 #include <unistd.h>
 
 
@@ -39,8 +41,10 @@ int main()
     while (myApp->_isRunning)
     {
         myApp->run();
-    }
-    
+        std::this_thread::sleep_for(std::chrono::microseconds(20 * 1000));
+    }   
+        
+
     sleep(3);
     return 1;
 };

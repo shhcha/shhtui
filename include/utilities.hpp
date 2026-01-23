@@ -45,6 +45,27 @@ namespace datatypes {
         
     };
 
+        enum class E_Key {
+        Char,
+        Enter,
+        Escape,
+        Backspace,
+        Up,
+        Down,
+        Left,
+        Right,
+        Tab,
+        Unknown
+    };
+
+    struct S_KeyEvent {
+        E_Key key;
+        char ch;        // valid only if key == Char
+        bool ctrl;
+        bool alt;
+        bool shift;
+    };
+
 } /// ::datatypes
 
 namespace utilities {

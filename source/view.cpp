@@ -25,5 +25,11 @@ bool C_View::draw()
     return true;
 }
 
+bool C_View::handleInput(const datatypes::S_KeyEvent& ev)
+{
+    
+    return true;
+}
+
 }
 }

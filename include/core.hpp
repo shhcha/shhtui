@@ -6,9 +6,9 @@
  */
 
 #include "view.hpp"
-
 namespace shhtui {
-namespace core {
+namespace core
+{
     class C_AppCore {
     public:
         /// De/Constructors
@@ -23,10 +23,15 @@ namespace core {
 
         bool update();
 
-        bool handleInput();
+        bool pollInput();
+
+        bool handleRawByte(char b);
+
+        bool onKeyEvent(const datatypes::S_KeyEvent& ev);
 
         bool setView(std::shared_ptr<core::C_View> newView);
         
+
 
         /// Variables
         bool _isRunning = false;
