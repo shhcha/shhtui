@@ -1,4 +1,5 @@
 #include "../include/core.hpp"
+
 #include <optional>
 
 /**
@@ -51,6 +52,8 @@ bool C_AppCore::onKeyEvent(const datatypes::S_KeyEvent& ev)
 {
     if(ev.ch == 'q')
         _isRunning = false;
+    if(ev.ch == 'w')
+        render::popStyle();
     if (_activeView) {
         _activeView->handleInput(ev);
     }

@@ -6,6 +6,8 @@
  */
 
 #include "view.hpp"
+#include "renderer.hpp"
+
 namespace shhtui {
 namespace core
 {
